@@ -1,0 +1,214 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: sans-serif;
+  font-size: 1rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrap, .footer {
+  width: 92%;
+  margin: 3em auto 0;
+}
+
+.wrap {
+  flex: 1 0 auto;
+}
+
+@media only screen and (min-width: 1024px) {
+  .wrap {
+    width: 1024px;
+  }
+}
+
+a {
+  color: #b6262c;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+::selection, ::-moz-selection {
+  background-color: #b6262c;
+  color: white;
+}
+
+
+/* Estilos de la sección del perfil */
+.seccion-perfil {
+  text-align: center;
+}
+
+.seccion-perfil .imagen-perfil {
+  position: relative;
+  max-width: 10rem;
+  margin: 0.6em auto;
+}
+
+.seccion-perfil .imagen-perfil .loader {
+  width: 10rem;
+  height: 10rem;
+  border: 0.5em solid #3d3d3d;
+  border-right-color: #b6262c;
+  border-bottom-color: #b6262c;
+  border-radius: 50%;
+  transition: transform 0.8s ease-in-out;
+}
+
+.seccion-perfil .imagen-perfil:hover .loader {
+  transform: rotate(180deg);
+}
+
+.seccion-perfil .imagen-perfil .foto-perfil {
+  position: absolute;
+  width: 100%;
+  top: 0.5em;
+  bottom: 0.5em;
+  left: 0.5em;
+  right: 0;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.seccion-perfil .nombre-completo {
+  font-weight: 100;
+  font-size: 2rem;
+  margin: 0.8em auto;
+}
+
+.seccion-perfil .titulo-profesional {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #b6262c;
+  margin: 0.8em auto;
+}
+
+.seccion-perfil .descripcion-personal {
+  font-size: 0.9rem;
+}
+
+.seccion-perfil .descripcion-personal p {
+  margin-top: 0.9em;
+}
+
+.seccion-perfil .descripcion-personal a:hover {
+  color: initial;
+}
+
+@media only screen and (min-width: 720px) {
+  .seccion-perfil .imagen-perfil {
+    max-width: 11rem;
+  }
+  .seccion-perfil .imagen-perfil .loader {
+    width: 11rem;
+    height: 11rem;
+  }
+  .seccion-perfil .nombre-completo {
+    font-size: 2.4rem;
+  }
+  .seccion-perfil .titulo-profesional {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .seccion-perfil .imagen-perfil {
+    max-width: 12rem;
+  }
+  .seccion-perfil .imagen-perfil .loader {
+    width: 12rem;
+    height: 12rem;
+  }
+  .seccion-perfil .nombre-completo {
+    font-size: 2.5rem;
+  }
+  .seccion-perfil .titulo-profesional {
+    font-size: 1.2rem;
+  }
+}
+
+/* Estilos de los enlaces de contacto */
+.enlaces-contacto {
+  margin: 2.2rem auto;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.enlaces-contacto .enlace-contacto {
+  display: inline-flex; /* Usar flexbox para centrar contenido (no he podido sin flexbox) */
+  align-items: center; /* Centrar verticalmente */
+  justify-content: center; /* Centrar horizontalmente */
+  width: 2.2em;
+  height: 2.2em;
+  margin: 0 0.2em;
+  background: #f9f9fb;
+  border-radius: 50%; /* Mantener el borde redondeado */
+  color: #535358;
+  text-align: center;
+  transition: all 0.3s ease-in-out; /* Añadir transición para el hover */
+}
+
+.enlaces-contacto .enlace-contacto:hover {
+  transform: scale(1.2);
+  background: #b6262c;
+  color: #fff;
+  box-shadow: 0 0 1px 7px rgba(182, 38, 44, 0.15);
+}
+
+
+/* Estilos de los botones de acción */
+.botones-accion {
+  margin: 3em auto;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.botones-accion .boton-accion {
+  position: relative;
+  display: inline-block;
+  margin: 1.2em 1.2em;
+  width: 11em;
+  height: 2em;
+  line-height: 2em;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  font-weight: 700;
+  outline: inherit;
+}
+
+.botones-accion .boton-accion:after {
+  content: "";
+  transition: 0.5s all ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 50%;
+  bottom: -0.3em;
+  background: #d63940;
+  transform: translateX(-50%);
+}
+
+.botones-accion .boton-accion:hover:after {
+  width: 0;
+}
+
+.botones-accion .boton-accion:hover {
+  color: #666;
+}

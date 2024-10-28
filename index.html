@@ -1,45 +1,104 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alfonso Jiménez</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <img src="img/rana.jpg" alt="Foto perfil" class="profile-image">
-            <h1>Alfonso <span class="negrita">Jiménez</span></h1>
-            <p class="subtitle">SOFTWARE DEVELOPER - FULLSTACK</p>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta charset="utf-8" />
+        <title>Alfonso Jiménez - Ingeniero de Software / Analista de Datos</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- Sección del perfil -->
+      <section class="seccion-perfil">
+        <div class="imagen-perfil">
+            <a href="#" aria-label="Foto de perfil de Alfonso Jiménez">
+            <div class="loader"></div>
+            <div class="foto-perfil" style="background-image: url('assets/img/frog.jpg');"></div>
+          </a>
         </div>
-    </header>
+        
+        <h1 class="nomre-completo">Alfonso <b>Jiménez</b></h1>
+        <h2 class="titulo-profesional">Ingeniero de Software · Analista de Datos</h2>
+        
+        <span class="descripcion-personal">
+            <p>
+                Soy un ingeniero full stack con dos décadas de experiencia construyendo y optimizando
+                <a target="_blank" href="https://innovacionesdigitales.com">
+                    <strong>soluciones digitales innovadoras</strong>
+                </a>.
+                Mi trayectoria profesional me ha permitido dominar un amplio abanico de tecnologías, desde el desarrollo front-end con 
+                <i>JavaScript, React</i> y <i>Angular</i> hasta la arquitectura back-end con 
+                <i>Node.js, Python</i> y bases de datos relacionales y NoSQL.
+            </p>
+            <p>
+                A lo largo de estos años, he liderado equipos de desarrollo en proyectos de diversa envergadura, aplicando 
+                <a target="_blank" href="https://www.metodologiasagiles.com">
+                    <strong>metodologías ágiles</strong>
+                </a> y asegurando la calidad del código mediante pruebas unitarias e integración.
+                Me apasiona mantenerme actualizado con las 
+                <a target="_blank" href="https://ultimastendenciastecnologicas.com">
+                    <strong>últimas tendencias tecnológicas</strong>
+                </a> y compartir mi conocimiento con otros desarrolladores.
+            </p>
+            <p>
+                Busco nuevos desafíos donde pueda aportar mi experiencia y contribuir al éxito de proyectos ambiciosos.
+                Si necesitas a alguien que pueda abordar cualquier aspecto del desarrollo web con solvencia y creatividad, 
+                no dudes en <a target="_blank" href="https://contacto.com">
+                    <strong>contactarme</strong>
+                </a>.
+            </p>
+        </span>
+        
+      </section>
+      <!-- Sección de enlaces de contacto -->
+      <section class="enlaces-contacto">
+        <a
+          class="enlace-contacto"
+          href="mailto:ajparte.carlemany@outlook.com"
+          aria-label="Correo electrónico"
+          ><i class="fas fa-envelope" aria-hidden="true"></i
+        ></a>
+        <a
+          class="enlace-contacto"
+          href="https://github.com/ajparte"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Github"
+          ><i class="fab fa-github" aria-hidden="true"></i
+        ></a>
+        <a
+          class="enlace-contacto"
+          href="https://instagram.com/ajparte"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+          ><i class="fab fa-instagram" aria-hidden="true"></i
+        ></a>
+        <a
+          class="enlace-contacto"
+          href="https://linkedin.com/in/ajparte"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+          ><i class="fab fa-linkedin" aria-hidden="true"></i
+        ></a>
+        <a
+          class="enlace-contacto"
+          href="https://twitter.com/ajparte"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Twitter"
+          ><i class="fab fa-twitter" aria-hidden="true"></i
+        ></a>
+      </section>
 
-    <main>
-        <div class="container">
-            <p>Soy un ingeniero full stack con dos décadas de experiencia construyendo y optimizando soluciones digitales innovadoras. Mi trayectoria profesional me ha permitido dominar un amplio abanico de tecnologías, desde el desarrollo front-end con JavaScript, React y Angular hasta la arquitectura back-end con Node.js, Python y bases de datos relacionales y NoSQL.</p>
-            <p>A lo largo de estos años, he liderado equipos de desarrollo en proyectos de diversa envergadura, aplicando metodologías ágiles y asegurando la calidad del código mediante pruebas unitarias y de integración. Me apasiona mantenerme actualizado con las últimas tendencias tecnológicas y compartir mi conocimiento con otros desarrolladores.</p>
-            <p>Busco nuevos desafíos donde pueda aportar mi experiencia y contribuir al éxito de proyectos ambiciosos. Si necesitas a alguien que pueda abordar cualquier aspecto del desarrollo web con solvencia y creatividad, no dudes en contactarme.</p>
-        </div>
+      <!-- Botones de acción -->
+      <section class="botones-accion">
+        <button class="boton-accion">Sobre mi</button>
+        <button class="boton-accion">Experiencia</button>
+        <button class="boton-accion">Publicaciones</button>
+      </section>
 
-
-    <footer>
-        <div class="container">
-            <ul class="social-media">
-                <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-            </ul>
-          
-            <ul class="navigation">
-                <li><a href="#">SOBRE MI</a></li>
-                <li><a href="#">EXPERIENCIA DETALLADA</a></li>
-                <li><a href="#">CONTACTO </a></li>
-            </ul>
-        </div>
-
-    </footer>
-</body>
+    </div>
+  </body>
 </html>
